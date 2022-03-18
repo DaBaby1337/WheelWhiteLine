@@ -213,7 +213,13 @@ h3{
     font-weight: 900;
     line-height: 44px;
     color: black;
-
+}
+.bmw:hover .bmw-pic{
+    transition: 2s;
+    transform: scale(1.1);
+}
+.bmw-pic{
+    transition: 2s;
 }
 /* cars-end */
 /* cards-start */
@@ -259,4 +265,5 @@ h3{
 .theCard:hover .head-card-desc{
     text-decoration: underline rgb(190, 192, 224); 
 }
+
 /* cards-end */
