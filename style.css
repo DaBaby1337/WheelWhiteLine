@@ -12,20 +12,28 @@ header{
     left: 0;
     width: 100%;
     z-index: 2;
+    transition: .2s linear;
 }
-
-.header-active{
-    top: 0;
-    width: 100%;
-    background-color: blue;
-}
-body{
-    font-family: 'Source Sans Pro', sans-serif;
+.wrapper-header{
+    max-width: 1170px;
+    margin: 0 auto;
 }
 .wrapper{
     max-width: 1170px;
     margin: 0 auto;
 }
+.active-wrapper{
+    max-width: 1920px;
+}
+.header-active{
+    top: 0;
+    width: 100%;
+    
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 .fullMain{
     position: relative;
     height: 1080px;
@@ -48,6 +56,15 @@ body{
     display: flex;
     justify-content: space-between;
     
+    height: 120px;
+    background-color: white;
+    z-index: 2;
+}
+.header-triple-active{
+    width: 100%;
+    max-width: 1920px;
+    display: flex;
+    justify-content: space-around;
     height: 120px;
     background-color: white;
     z-index: 2;
@@ -118,9 +135,10 @@ h3{
 /* main-end */
 /* slider-start* can-fixed 1920 */
 .slider-section{
-    padding-top: 250px;
+    padding-top: 200px;
   position: relative;
   z-index: 1;
+  margin-bottom: 40px;
 }
 .slider{
    
@@ -154,3 +172,91 @@ h3{
     background: url(/img/arrowRight.png);
 }
 /* slider-end*/
+/* slogan-start */
+.slogan{
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.slogan1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 44px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.slogan2{
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 49px;
+    color: #fff;
+}
+/* slogan-start */
+/* cars-start */
+.wrapper-cars{
+    max-width: 1430px;
+    margin: 0 auto;
+}
+.bmws{
+    width: 100%;
+}
+.bmw{
+    position: relative;
+}
+.desc-bmw{
+    position: absolute;
+    top: 74%;
+    left: 15%;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 44px;
+    color: black;
+
+}
+/* cars-end */
+/* cards-start */
+.grid-wrapper-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card1{
+    background-color: #00bcd4;
+}
+.card-desc{
+    margin-left: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .2px;
+    line-height: 27px;
+}
+.card-info{
+    display: flex;
+    padding: 130px 20px 130px 20px ;
+}
+.head-card-desc{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.card2{
+    background-color: #ef5350;
+}
+.card3{
+    background-color: #ff7043;
+}
+.card4{
+    background-color: #9ccc65;
+}
+.theCard:hover .card-pic-img{
+ opacity: 60%;
+}
+.theCard:hover .head-card-desc{
+    text-decoration: underline rgb(190, 192, 224); 
+}
+/* cards-end */

@@ -52,11 +52,18 @@ function test(){
 // header-start
 (function(){
 const header=document.querySelector('.header');
-const wrapper=document.querySelector('.head-wrapper');
+const wrapper=document.querySelector('.wrapper-header');
+const headerTriple=document.querySelector('.header-triple');
 window.onscroll=()=>{
     if(window.pageYOffset>100){
         header.classList.add('header-active');
-        wrapper.classList.add('head-wrapper-active');
+        wrapper.classList.add('active-wrapper');
+        headerTriple.classList.add('header-triple-active');
+    }
+    else{
+        header.classList.remove('header-active');
+        wrapper.classList.remove('active-wrapper');
+        headerTriple.classList.remove('header-triple-active');
     }
 };
 }())
