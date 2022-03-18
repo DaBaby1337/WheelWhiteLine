@@ -5,12 +5,19 @@ html{
 *,*::before,*::after{
     box-sizing: inherit;
 }
+/* main-start */
 header{
     position: fixed;
-    top: 0;
+    top: 40px;
     left: 0;
     width: 100%;
     z-index: 2;
+}
+
+.header-active{
+    top: 0;
+    width: 100%;
+    background-color: blue;
 }
 body{
     font-family: 'Source Sans Pro', sans-serif;
@@ -40,7 +47,7 @@ body{
     max-width: 1170px;
     display: flex;
     justify-content: space-between;
-    position:absolute;
+    
     height: 120px;
     background-color: white;
     z-index: 2;
@@ -107,3 +114,43 @@ h3{
   color: #0E8AB1;
   
 }
+
+/* main-end */
+/* slider-start* can-fixed 1920 */
+.slider-section{
+    padding-top: 250px;
+  position: relative;
+  z-index: 1;
+}
+.slider{
+   
+    border: 2px solid black;
+    max-width: 100%;
+    margin:  auto;
+     overflow: hidden; 
+}
+.slider-line{
+    display: flex;
+    transition: all ease 1s;
+}
+.mcontainer{
+    position:relative;
+}
+.buttons{
+    position: absolute;
+    left: 45%;
+    top: 93%;
+}
+.button-slider{
+    width: 35px;
+    height: 35px;
+    opacity: 60%;
+    border-radius: 50%;
+}
+.slider-back{
+    background: url(/img/arrowLeft.png);
+}
+.slider-next{
+    background: url(/img/arrowRight.png);
+}
+/* slider-end*/
