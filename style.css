@@ -299,7 +299,7 @@ h3{
     margin: 0 auto;
     align-items: center;
     justify-content: center;
-    
+    margin-bottom: 50px;
 }
 .name-founder{
     color: #262626;
@@ -316,3 +316,70 @@ h3{
     padding:0 25px 0 25px;
 }
 /* our-mission-end*/
+/* progress-start */
+.progress-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    margin-left: 80px;
+    padding-bottom: 145px;
+}
+.block-progress-1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 11px;
+
+}
+.block-progress-1:last-child{
+    margin-right: 0px;
+}
+.desc-progress-title{
+    color: #0E8AB1;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    text-align: left;
+}
+.desc-progress{
+    margin-left: 7px;
+    color: #262626;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 27px;
+}
+/* progress-end*/
+/* slider-cars-start */
+.slider-car{
+   
+    max-width: 80%;
+    margin: 20px auto;
+     overflow: hidden; 
+}
+.slider-line-car{
+    display: flex;
+    transition: all ease 1s;
+}
+.mcontainer-car{
+    position:relative;
+}
+.buttons-car{
+    position: absolute;
+    left: 45%;
+    top: 93%;
+}
+.button-slider-car{
+    width: 35px;
+    height: 35px;
+    opacity: 60%;
+    border-radius: 50%;
+}
+.slider-back-car{
+    background: url(/img/arrowLeft.png);
+}
+.slider-next-car{
+    background: url(/img/arrowRight.png);
+}
+/* slider-cars-end */
