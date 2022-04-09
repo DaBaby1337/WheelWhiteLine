@@ -67,6 +67,18 @@ window.onscroll=()=>{
     }
 };
 }())
+//media-header burger
+(function(){
+    const burgerItem = document.querySelector('.burger');
+    const menu=document.querySelector('.header-nav');
+    const menuCloseItem=document.querySelector('.header-nav-close');
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('header-nav-active')
+    });
+    menuCloseItem.addEventListener('click',()=>{
+        menu.classList.remove('header-nav-active')
+    });
+}());
 // header-end
 // slider-cars-start
 const imagesCar= document.querySelectorAll('.slider-car .slider-line-car img');
@@ -106,3 +118,4 @@ function rollSliderCar(){
     sliderLineCar.style.transform ='translate(-' +countCar*widthCar +'px';
 }
 //slider-cars-end
+
