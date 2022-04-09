@@ -5,6 +5,10 @@ html{
 *,*::before,*::after{
     box-sizing: inherit;
 }
+.linkL{
+    text-decoration: none;
+    outline: none!important;
+}
 /* main-start */
 header{
     position: fixed;
@@ -94,7 +98,7 @@ h3{
     margin-right: 10px;
 }
 .number-contact{
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 .contacts::before{
@@ -129,7 +133,7 @@ h3{
 }
 .header-link:hover ,.header-link:focus,.header-link:active{
   color: #0E8AB1;
-  
+  border-bottom: 2px solid #0E8AB1;
 }
 
 /* main-end */
@@ -380,12 +384,12 @@ h3{
 .buttons-car{
     position: absolute;
     left: 45%;
-    top: 93%;
+    top: 89%;
 }
 .button-slider-car{
     width: 35px;
     height: 35px;
-    opacity: 60%;
+    opacity: 90%;
     border-radius: 50%;
 }
 .slider-back-car{
@@ -405,6 +409,7 @@ h3{
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 15px;
     text-align: center;
+    margin-top: 100px;
 }
 .table-rate{
     display: inline-block;
@@ -465,7 +470,50 @@ background-size: cover;
 .rate{
     margin-bottom: 100px;
 }
+.half-price{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 2px;
+    color: white;
+    background: url(img/bg-half-price.png);
+    border: 3px solid black;
+    text-align: center;
+    padding: 50px;
+    margin-top: 15px;
+    background-size:cover;
+}
 /* rate-end */
+/* services-start */
+.services {
+    background-color: #eceff1;
+    padding: 60px 0;
+    margin-bottom: 100px;
+}
+.title-services{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-bottom: 80px;
+}
+ .card-service{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 40px 0;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+        font-size: 30px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 2px;
+    }
+    .desc-service{
+        padding-left: 30%;
+    }
+/* services-end */
 /* </warranty-start> */
 .warranty{
     background: url(img/bg-airport\ 1.png);
@@ -494,7 +542,7 @@ background-size: cover;
     text-align: center;
     font-size: 40px;
     line-height: 27px;
-    color: #0E8AB1;
+    color: white;
     text-decoration: none;
 }
 /* </warranty-end> */
@@ -527,5 +575,11 @@ background-size: cover;
 .mail-footer-a{
     text-decoration: none;
     color: white;
+}
+.footer-link{
+    text-decoration: none;
+    color: white;
+    outline: none!important;
+    
 }
 /* footer-end */
