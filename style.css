@@ -225,6 +225,7 @@ h3{
 .wrapper-cars{
     max-width: 1430px;
     margin: 0 auto;
+    
 }
 .bmws{
     width: 100%;
@@ -611,6 +612,7 @@ background-size: cover;
 }
 /* footer-end */
 /* media-start */
+
     @media screen and (max-width:1100px) {
         .header-burger{
             display: block;
@@ -637,6 +639,25 @@ background-size: cover;
         .go-ico{
             margin-top: 20px;
             margin-right: 30px;
+        }
+        .header{
+            position:absolute;
+        }
+        .grid-wrapper-cards{
+            grid-template-columns: repeat(2,1fr);
+        }
+        .rate-grid{
+            grid-template-columns: repeat(1,1fr);
+        }
+        .block-rate{
+            background-position: 0px, 300px;
+            margin-bottom: 8px;
+        }
+        .title-warranty{
+            padding-top: 40px;
+        }
+        .desc-warranty{
+            padding-top: 20px;
         }
         /* my-end */
         .header-nav{
@@ -672,7 +693,7 @@ background-size: cover;
             height: 40px;
             position:absolute ;
             top: 20px;
-            right: 20px;
+            left: 70px;
             z-index: 11;
         }
         .header-nav-close-line{
@@ -690,4 +711,32 @@ background-size: cover;
             transform: translateY(-50%) rotate(-45deg);
         }
     }
+    @media screen and (max-width:700px){
+        .grid-wrapper-cards{
+       grid-template-columns: repeat(1,1fr);
+   }
+   .card-info{
+       padding: 20px;
+   }
+   .card-desc{
+       font-size: 13px;
+       line-height: 17px;
+   }
+   .cars{
+       margin-top: -330px;
+   }
+   .desc-warranty{
+       font-size: 17px;
+       line-height: 17px;
+       padding: 0 5px;
+       letter-spacing: 1px;
+   }
+   .progress-grid{
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 5px;
+   }
+   .block-progress-1{
+       margin-right: 10px;
+   }
+   }
 /* media-end */
