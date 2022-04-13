@@ -1,3 +1,7 @@
+let fixSection=document.querySelector('.city-tours-link');
+fixSection.addEventListener('click',()=>{
+    alert('This section is under development. All our operators and drivers are English-speaking , you can consult on any of the numbers on the website!');
+});
 // header-start
 (function(){
     const header=document.querySelector('.header');
@@ -21,12 +25,20 @@
         const burgerItem = document.querySelector('.burger');
         const menu=document.querySelector('.header-nav');
         const menuCloseItem=document.querySelector('.header-nav-close');
+        const menuLinks=document.querySelectorAll('.header-link');
         burgerItem.addEventListener('click', () => {
             menu.classList.add('header-nav-active')
         });
         menuCloseItem.addEventListener('click',()=>{
             menu.classList.remove('header-nav-active')
         });
+        if(window.innerWidth<=750){
+            for (let i=0; i<menuLinks.length;i+=1){
+                menuLinks[i].addEventListener('click', ()=>{
+                    menu.classList.remove('header-nav-active');
+                });
+            }
+        }
     }());
     // Scroll to anchors
 (function () {
