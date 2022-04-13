@@ -715,6 +715,55 @@ background-size: cover;
         .grid-wrapper-cards{
        grid-template-columns: repeat(1,1fr);
    }
+   .nav{
+       padding-left: 20px;
+   }
+   .slogan-mission{
+       padding-top: 20px;
+       font-size: 30px;
+   }
+   .half-price{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-align:start;
+   }
+   .title-yandex{
+       font-size: 30px;
+       margin-bottom: 10px;
+   }
+   .desc-progress{
+       margin-right: 29px;
+   }
+   .progress-grid{
+       padding-left: 40px;
+       padding-bottom: 20px;
+   }
+   .title-cars{
+       margin-top: 20px;
+   }
+   .wrapper-slider-car{
+       margin-bottom: 1px;
+   }
+   .rate{
+       margin-bottom: 10px;
+   }
+   .services{
+       margin-bottom: 10px;
+   }
+   .warranty{
+       margin-bottom: 10px;
+   }
+   .footer-block{
+       padding: 20px ;
+   }
+   .rate-grid{
+       margin-top: 30px;
+   }
+   .desc-yandex{
+       font-size: 20px;
+   }
    .card-info{
        padding: 20px;
    }
@@ -726,10 +775,14 @@ background-size: cover;
        margin-top: -330px;
    }
    .desc-warranty{
-       font-size: 17px;
-       line-height: 17px;
-       padding: 0 5px;
+       font-size: 15px;
+       line-height: 15px;
+       padding: 20px;
        letter-spacing: 1px;
+       text-align: left;
+   }
+   .link-warranty{
+       padding: 0;
    }
    .progress-grid{
     grid-template-columns: repeat(2,1fr);
@@ -737,6 +790,13 @@ background-size: cover;
    }
    .block-progress-1{
        margin-right: 10px;
+   }
+   .contact-dang{
+       top: 450px;
+       left: 10px;
+   }
+   .go-ico{
+       margin-right: 1px;
    }
    }
 /* media-end */
