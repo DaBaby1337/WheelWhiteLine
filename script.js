@@ -125,7 +125,7 @@ function rollSlider(count){
     }
     rollSlider(count);
 }
-    document.getElementById('sliderW').onmouseenter=function(){
+    document.getElementById('sliderW-js').onmouseenter=function(){
     start();
 }
 // slider-cars-start
